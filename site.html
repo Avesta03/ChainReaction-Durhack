@@ -1,0 +1,45 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Global Supply Chain Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Global Supply Chain Simulator</h1>
+    
+    <h2>Select Your Product and Country</h2>
+    <form id="start-form">
+        <label for="product">Product:</label>
+        <select id="product">
+            <option value="Coffee">Coffee</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Clothing">Clothing</option>
+            <!-- Add more products -->
+        </select>
+
+        <label for="country">Country:</label>
+        <select id="country">
+            <option value="Brazil">Brazil</option>
+            <option value="USA">USA</option>
+            <option value="China">China</option>
+            <!-- Add more countries -->
+        </select>
+        <button type="submit">Start Game</button>
+    </form>
+
+    <div id="game-status">
+        <!-- Display game status and metrics -->
+    </div>
+
+    <div id="event-log">
+        <!-- Display events that occur during the game -->
+    </div>
+
+    <svg id="supply-chain-visualization"></svg>
+
+    <script src="d3.v6.min.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>

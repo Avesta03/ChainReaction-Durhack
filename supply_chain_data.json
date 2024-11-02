@@ -1,0 +1,25 @@
+{
+    "products": [
+      {
+        "name": "Coffee",
+        "supply_chain": [
+          {"node": "Farm", "location": "Brazil"},
+          {"node": "Roastery", "location": "USA"},
+          {"node": "Retailer", "location": "Local Store"}
+        ],
+        "events": [
+          {
+            "name": "Flood",
+            "impact": {"profit": -200, "sustainability": -10, "carbon_footprint": 1.5},
+            "description": "Flooding in Brazil affects coffee harvest."
+          },
+          {
+            "name": "Labor Strike",
+            "impact": {"profit": -150, "sustainability": 0, "carbon_footprint": 0.5},
+            "description": "Workers go on strike at the roastery."
+          }
+        ]
+      }
+    ]
+  }
+  
